@@ -92,8 +92,8 @@
         execute_query($conn, $sql, "Celkový počet zákazníkov zo všetkých objednávok");
 
         echo "<h1>požiadavka 08</h1>";
-        $sql = "SELECT COUNT(DISTINCT o.CustomerID) AS TotalCustomers1997 FROM orders o WHERE YEAR(o.OrderDate) = 1997";
-        execute_query($conn, $sql, "Celkový počet zákazníkov z objednávok v roku 1997");
+        $sql = "SELECT COUNT(DISTINCT o.CustomerID) AS TotalCustomers1995 FROM orders o WHERE YEAR(o.OrderDate) = 1995";
+        execute_query($conn, $sql, "Celkový počet zákazníkov z objednávok v roku 1995");
 
         mysqli_close($conn);
         ?>
