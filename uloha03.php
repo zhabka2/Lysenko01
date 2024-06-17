@@ -88,7 +88,7 @@
         execute_query($conn, $sql, "Celkové a ročné platby zákazníkov (rok 1995)");
 
         echo "<h1>požiadavka 07</h1>";
-        $sql = "SELECT COUNT(DISTINCT o.CustomerID) AS TotalCustomers FROM orders o";
+        $sql = "SELECT COUNT(DISTINCT o.CustomerID) AS TotalCustomers FROM orders";
         execute_query($conn, $sql, "Celkový počet zákazníkov zo všetkých objednávok");
 
         echo "<h1>požiadavka 08</h1>";
